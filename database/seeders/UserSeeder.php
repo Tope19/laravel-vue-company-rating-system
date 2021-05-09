@@ -20,7 +20,14 @@ class UserSeeder extends Seeder
                 'email' => 'topeolotu75@gmail.com',
                 'isAdmin' => 1,
                 'password' => bcrypt('password'),
-            ]
+            ],
+
+            [
+                'name' => 'User',
+                'email' => 'user@user.com',
+                'remember_token' => Str::random(10),
+                'password' => bcrypt('password'),
+            ],
         ];
 
         foreach($users as $user){
